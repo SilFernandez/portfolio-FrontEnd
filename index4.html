@@ -1,58 +1,231 @@
-.spacer {
-    flex: 1;
-  }
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ProyectoDeSilvina</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/iconodev.png"> <!--icono y texto en la pestaña del navegador-->
+  <link rel="stylesheet" href="styles.css" /> <!--Vinculo con CSS y de CSS para usar Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
 
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 40px;
-    margin: 0 8px;
-  }
-
-  .toolbar #youtube-logo {
-    height: 40px;
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo:hover,
-  .toolbar #youtube-logo:hover {
-    opacity: 0.8;
-  }
-<div class="toolbar" role="banner">
-    <img
-      width="40"
-      alt="Angular Logo"
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
-    />
-    <span>Welcome</span>
-      <div class="spacer"></div>
-      <a aria-label="Angular on twitter" target="_blank" rel="noopener" href="https://twitter.com/angular" title="Twitter">
-        <svg id="twitter-logo" height="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-          <rect width="400" height="400" fill="none"/>
-          <path d="M153.62,301.59c94.34,0,145.94-78.16,145.94-145.94,0-2.22,0-4.43-.15-6.63A104.36,104.36,0,0,0,325,122.47a102.38,102.38,0,0,1-29.46,8.07,51.47,51.47,0,0,0,22.55-28.37,102.79,102.79,0,0,1-32.57,12.45,51.34,51.34,0,0,0-87.41,46.78A145.62,145.62,0,0,1,92.4,107.81a51.33,51.33,0,0,0,15.88,68.47A50.91,50.91,0,0,1,85,169.86c0,.21,0,.43,0,.65a51.31,51.31,0,0,0,41.15,50.28,51.21,51.21,0,0,1-23.16.88,51.35,51.35,0,0,0,47.92,35.62,102.92,102.92,0,0,1-63.7,22A104.41,104.41,0,0,1,75,278.55a145.21,145.21,0,0,0,78.62,23" fill="#fff"/>
-        </svg>
-      </a>
-      <a aria-label="Angular on YouTube" target="_blank" rel="noopener" href="https://youtube.com/angular" title="YouTube">
-        <svg id="youtube-logo" height="24" width="24" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
-          <path d="M0 0h24v24H0V0z" fill="none"/>
-          <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
-        </svg>
-      </a>
+<body>
+  <!---->
+  <div class="row">
+    <div class="container">
+    <div class="logo">
+        <img src="../../../assets/APLogo.png" id="logoAP">
+    </div>
+    <div class="redes">
+        <a href=""><img src="../../../assets/linkedin.png" id="linkedin"></a>
+        <a href=""><img src="../../../assets/github.png" id="github"></a>
+        <a href=""><img src="../../../assets/instagram.png" id="instagram"></a>
+        <a href=""><img src="../../../assets/twitter.png" id="twitter"></a>
+        <a href=""><img src="../../../assets/facebook.png" id="facebook"></a>
+        <button type="button" class="btn btn-outline-light">INGRESO</button>
+    </div>
+    </div>
   </div>
+  <div>
+    <img src="../../../assets/bannerfondo.jpg" alt="">
+  </div>
+
+<!--Acerca de mi-->
+  <div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../../assets/fotoperfil.jpg" class="img-fluid" id="fotoperfil"> 
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <p id="nombre">Nombre y Apellido</p>
+        <p>Full Stack Developer Jr</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+        <span>
+            <h1>Acerca de mi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, enim amet. Ex reiciendis, nisi, officia animi, perferendis culpa pariatur quis error ea voluptatum veritatis nam architecto exercitationem voluptatem iure. Repudiandae!</p>
+        </span>
+    </div>
+</div>
+<!--Experiencia-->
+<div class="row">
+  <h1>Experiencia.</h1>
+  <div class="col-lg-11">
+      <ul>
+          <li> <h2>Trabajo 1</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+      <ul>
+          <li> <h2>Trabajo 2</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+      <ul>
+          <li> <h2>Trabajo 3</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+   </div>
+</div>
+<!--Educación-->
+<div class="row">
+  <h1>Educacion.</h1>
+  <div class="col-lg-11">
+      <ul>
+          <li> <h2>Estudio 1</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+      <ul>
+          <li> <h2>Estudio 2</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+      <ul>
+          <li> <h2>Estudio 3</h2> - <h4>(years)</h4>
+          </li>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ipsa fuga pariatur veniam tempora quisquam, natus earum illo harum deserunt nobis vel illum vitae eaque necessitatibus! Ad rerum culpa architecto.</p>
+      </ul>
+   </div>
+</div>
+<!--Hard & Soft skills-->
+<div class="row">
+  <h1>Hard & Soft skills</h1>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="85"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'HTML'"
+   [titleFontSize]="'2em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="85"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'CSS'"
+   [titleFontSize]="'2em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="80"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'JAVASCRIPT'"
+   [titleFontSize]="'1em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="60"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'GITHUB'"
+   [titleFontSize]="'2em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="60"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'INGLES'"
+   [titleFontSize]="'2em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+  <div class="text-center col-sm-4 col-md-4 col-lg-4">
+  <circle-progress
+   [percent]="100"
+   [radius]="100"
+   [showUnits]="false"
+   [title]="'TRABAJO EN GRUPO'"
+   [titleFontSize]="'1em'"
+   [showSubtitle]="false"
+   [outerStrokeWidth]="12"
+   [innerStrokeWidth]="6"
+   [outerStrokeColor]="'#55574E'"
+   [innerStrokeColor]="'#000000'"
+   [animation]="true"
+   [animationDuration]="500"
+   ></circle-progress>
+  </div>
+</div>
+<!--Proyectos-->
+<div class="row">
+  <h1>Proyectos Realizados</h1>
+  <div class="contenedor">
+      <div class="col-sm-12 col-md-7 col-lg-7 parte1">
+          <h1>Proyecto</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure fugiat officiis amet ipsa et, iste, adipisci blanditiis doloremque esse molestias enim? Aliquid asperiores voluptate vitae, optio veniam autem magnam saepe.
+          </p>
+       </div>
+       <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
+          <img src="../../../assets/iconodev.png" class="img-fluid img-proyecto">
+       </div>
+  </div>
+</div>
+<!--Footer-->
+<div class="row">
+  <footer>
+      <p>Silvina Fernández - Argentina Programa 2023</p>
+      <p>Buenos Aires - Argentina</p>
+  </footer>
+</div>
+
+
   
-  <div class="content" role="main">
+  
+
+</body>
+
+<footer>
+
+</footer>
+
+ <script src="script.js"></script> <!--Vinculo JavaScript-->
+ <!--JavaScript Bundle con Popper para usar Bootstrap-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/e6da6f019e.js" crossorigin="anonymous"></script>  <!--Vinculo para íconos-->
+ <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> <!--Ver-->
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
